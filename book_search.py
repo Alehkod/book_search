@@ -1,4 +1,5 @@
 import os
+import log
 
 
 class Book:
@@ -45,6 +46,9 @@ class Book:
 
 
 b = Book()
+log = log.Logs('log.log')
+try:
 
-print(b.open_book("newfile.txt"))
-print(b.search())
+    log.trace(b.search())
+except:
+    log.trace('ERROR')
