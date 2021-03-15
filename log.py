@@ -19,6 +19,4 @@ class Logs:
         return template
 
     def cur_time(self):
-        return (
-            f'{datetime.datetime.today().date()} {datetime.datetime.today().hour}:{datetime.datetime.today().minute}'
-            f':{datetime.datetime.today().second}')
+        return datetime.datetime.today()
